@@ -29,7 +29,7 @@ Many howto's mention RTS requires 5V (VIN) to activate the P1 port, but for me 3
 All metrics are send to their own MQTT topic.
 The nodemcu sends out to the following MQTT topics:
 
----------------------------------------------------------
+```
 sensors/power/p1meter/consumption_low_tarif 2209397
 sensors/power/p1meter/consumption_high_tarif 1964962
 sensors/power/p1meter/actual_consumption 313
@@ -41,7 +41,7 @@ sensors/power/p1meter/short_power_outages 3
 sensors/power/p1meter/long_power_outages 1
 sensors/power/p1meter/short_power_drops 0
 sensors/power/p1meter/short_power_peaks 0
----------------------------------------------------------
+```
 
 As I don't have solar panels (yet) I do not collect the data for power returns as I don't have any.
 They are however easy to add if you know the codes used.
