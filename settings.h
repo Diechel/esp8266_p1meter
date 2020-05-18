@@ -34,9 +34,9 @@
 #define MQTT_ROOT_TOPIC "sensors/power/p1meter"
 
 // * MQTT Last reconnection counter
-long LAST_RECONNECT_ATTEMPT = 0;
+unsigned long LAST_RECONNECT_ATTEMPT = 0;
 
-long LAST_UPDATE_SENT = 0;
+unsigned long LAST_UPDATE_SENT = 0;
 
 // * To be filled with EEPROM data
 char MQTT_HOST[64] = "";
