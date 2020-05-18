@@ -630,11 +630,11 @@ void setup()
 void loop()
 {
     ArduinoOTA.handle();
-    long now = millis();
+    unsigned long now = millis();
 
     if (!mqtt_client.connected())
     {
-        if (now - LAST_RECONNECT_ATTEMPT > 5000)
+        if (now - LAST_RECONNECT_ATTEMPT >= 5000)
         {
             LAST_RECONNECT_ATTEMPT = now;
 
@@ -649,7 +649,7 @@ void loop()
         mqtt_client.loop();
     }
     
-    if (now - LAST_UPDATE_SENT > UPDATE_INTERVAL) {
+    if (now - LAST_UPDATE_SENT >= UPDATE_INTERVAL) {
         if (USE_HARDWARE_SERIAL) {
             read_p1_hardwareserial();
         } else {
