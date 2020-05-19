@@ -1,5 +1,7 @@
-# Esp8266_p1meter
-Software for the ESP2866 that sends P1 smart meter data to an mqtt broker (with OTA firmware updates)
+# ESP8266 P1 Meter
+Software for the ESP2866 that sends P1 smart meter data to an MQTT broker (with OTA firmware updates).
+
+I personally don't own a "smart" P1 meter but a friend of mine does.
 
 
 # About this fork
